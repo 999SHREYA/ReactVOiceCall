@@ -6,8 +6,8 @@ const App = () => {
   const zpRef = useRef(null);
   const userID = "user" + Math.floor(Math.random() * 1000);
   const userName = "react_" + userID;
-  const appID = 2080698290;
-  const serverSecret = "07b7d831d8e7514a60eea9b1609131c9";
+  const appID = VITE_AppID;
+  const serverSecret = VITE_ServerSecret;
   const TOKEN = ZegoUIKitPrebuilt.generateKitTokenForTest(
     appID,
     serverSecret,
